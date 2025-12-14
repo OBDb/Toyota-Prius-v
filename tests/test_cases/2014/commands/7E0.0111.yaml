@@ -4,17 +4,5 @@ test_cases:
     TP: 16.07843
   response: '7E803411129'
 - expected_values:
-    TP: 16.47059
-  response: 7E80341112A
-- expected_values:
-    TP: 17.2549
-  response: 7E80341112C
-- expected_values:
-    TP: 18.82353
-  response: '7E803411130'
-- expected_values:
-    TP: 19.60784
-  response: '7E803411132'
-- expected_values:
-    TP: 20.39216
-  response: '7E803411134'
+    TP: 26.66667
+  response: '7E803411144'

@@ -1,11 +1,14 @@
 command_id: 7C4.214C
 test_cases:
 - expected_values:
-    TOYOTA_EVAP_TARGET_T: 2.16
-  response: 7CC04614C80D8
-- expected_values:
-    TOYOTA_EVAP_TARGET_T: 2.42
-  response: 7CC04614C80F2
+    TOYOTA_EVAP_TARGET_T: 2
+  response: 7CC04614C80C8
 - expected_values:
     TOYOTA_EVAP_TARGET_T: 2.56
   response: 7CC04614C8100
+- expected_values:
+    TOYOTA_EVAP_TARGET_T: 7.62
+  response: 7CC04614C82FA
+- expected_values:
+    TOYOTA_EVAP_TARGET_T: 7.72
+  response: 7CC04614C8304
