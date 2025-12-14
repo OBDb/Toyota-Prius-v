@@ -4,20 +4,5 @@ test_cases:
     VSS: 0
   response: 7E803410D00
 - expected_values:
-    VSS: 6
-  response: 7E803410D06
-- expected_values:
-    VSS: 11
-  response: 7E803410D0B
-- expected_values:
-    VSS: 16
-  response: 7E803410D10
-- expected_values:
-    VSS: 17
-  response: 7E803410D11
-- expected_values:
-    VSS: 18
-  response: 7E803410D12
-- expected_values:
-    VSS: 21
-  response: 7E803410D15
+    VSS: 55
+  response: 7E803410D37
