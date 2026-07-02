@@ -3,3 +3,6 @@ test_cases:
 - expected_values:
     TOYOTA_T_DRIVER: 40
   response: 7CC03612928
+- expected_values:
+    TOYOTA_T_DRIVER: 42
+  response: 7CC0361292A

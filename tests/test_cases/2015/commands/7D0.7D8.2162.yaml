@@ -1,14 +1,17 @@
 command_id: 7D0.7D8.2162
 test_cases:
 - expected_values:
+    TOYOTA_PARKING_BRAKE_2: 0
+  response: 7D80461620005
+- expected_values:
     TOYOTA_PARKING_BRAKE: 'OFF'
     TOYOTA_PARKING_BRAKE_2: 1
   response: 7D80461620100
 - expected_values:
     TOYOTA_PARKING_BRAKE: 'OFF'
     TOYOTA_PARKING_BRAKE_2: 1
-  response: 7D80461620112
+  response: 7D8046162011D
 - expected_values:
     TOYOTA_PARKING_BRAKE: 'OFF'
     TOYOTA_PARKING_BRAKE_2: 1
-  response: 7D80461620113
+  response: 7D80461620500

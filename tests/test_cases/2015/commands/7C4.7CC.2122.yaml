@@ -3,3 +3,21 @@ test_cases:
 - expected_values:
     TOYOTA_AAT_7C4: 19.4
   response: 7CC0361227A
+- expected_values:
+    TOYOTA_AAT_7C4: 40.05
+  response: 7CC036122B5
+- expected_values:
+    TOYOTA_AAT_7C4: 40.4
+  response: 7CC036122B6
+- expected_values:
+    TOYOTA_AAT_7C4: 40.75
+  response: 7CC036122B7
+- expected_values:
+    TOYOTA_AAT_7C4: 41.8
+  response: 7CC036122BA
+- expected_values:
+    TOYOTA_AAT_7C4: 42.15
+  response: 7CC036122BB
+- expected_values:
+    TOYOTA_AAT_7C4: 42.85
+  response: 7CC036122BD
