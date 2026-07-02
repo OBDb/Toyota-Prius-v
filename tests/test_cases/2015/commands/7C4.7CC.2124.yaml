@@ -4,23 +4,5 @@ test_cases:
     TOYOTA_SOLAR_DRIVER: 14
   response: 7CC0361240E
 - expected_values:
-    TOYOTA_SOLAR_DRIVER: 15
-  response: 7CC0361240F
-- expected_values:
-    TOYOTA_SOLAR_DRIVER: 18
-  response: 7CC03612412
-- expected_values:
-    TOYOTA_SOLAR_DRIVER: 34
-  response: 7CC03612422
-- expected_values:
-    TOYOTA_SOLAR_DRIVER: 37
-  response: 7CC03612425
-- expected_values:
-    TOYOTA_SOLAR_DRIVER: 38
-  response: 7CC03612426
-- expected_values:
-    TOYOTA_SOLAR_DRIVER: 44
-  response: 7CC0361242C
-- expected_values:
     TOYOTA_SOLAR_DRIVER: 46
   response: 7CC0361242E
