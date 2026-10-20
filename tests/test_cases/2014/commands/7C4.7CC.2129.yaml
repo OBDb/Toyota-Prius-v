@@ -1,11 +1,11 @@
 command_id: 7C4.7CC.2129
 test_cases:
 - expected_values:
-    TOYOTA_T_DRIVER: 35
+    PRIUSV_T_DRIVER: 35
   response: 7CC03612923
 - expected_values:
-    TOYOTA_T_DRIVER: 36
+    PRIUSV_T_DRIVER: 36
   response: 7CC03612924
 - expected_values:
-    TOYOTA_T_DRIVER: 38
+    PRIUSV_T_DRIVER: 38
   response: 7CC03612926

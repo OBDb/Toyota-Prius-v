@@ -1,8 +1,8 @@
 command_id: 7C4.7CC.213D
 test_cases:
 - expected_values:
-    TOYOTA_ADJUSTED_AMBIENT_T: 20.72
+    PRIUSV_ADJUSTED_AMBIENT_T: 20.72
   response: 7CC03613DA1
 - expected_values:
-    TOYOTA_ADJUSTED_AMBIENT_T: 25.52
+    PRIUSV_ADJUSTED_AMBIENT_T: 25.52
   response: 7CC03613DB0
