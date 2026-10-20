@@ -1,0 +1,9 @@
+command_id: 7B0.7B8.213D|f=-2022
+test_cases:
+- expected_values:
+    PRIUSV_ABS_WARN: 0
+    PRIUSV_BRAKE_WARN: 0
+    PRIUSV_BUZZER: 0
+    PRIUSV_ECB_WARN: 0
+    PRIUSV_SLIP_WARN: 0
+  response: 7B804613D0000

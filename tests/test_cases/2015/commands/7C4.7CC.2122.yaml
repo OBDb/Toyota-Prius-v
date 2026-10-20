@@ -1,32 +1,32 @@
 command_id: 7C4.7CC.2122
 test_cases:
 - expected_values:
-    TOYOTA_AAT_7C4: 19.4
+    PRIUSV_AAT_7C4: 19.4
   response: 7CC0361227A
 - expected_values:
-    TOYOTA_AAT_7C4: 40.05
+    PRIUSV_AAT_7C4: 40.05
   response: 7CC036122B5
 - expected_values:
-    TOYOTA_AAT_7C4: 40.4
+    PRIUSV_AAT_7C4: 40.4
   response: 7CC036122B6
 - expected_values:
-    TOYOTA_AAT_7C4: 40.75
+    PRIUSV_AAT_7C4: 40.75
   response: 7CC036122B7
 - expected_values:
-    TOYOTA_AAT_7C4: 41.1
+    PRIUSV_AAT_7C4: 41.1
   response: 7CC036122B8
 - expected_values:
-    TOYOTA_AAT_7C4: 41.45
+    PRIUSV_AAT_7C4: 41.45
   response: 7CC036122B9
 - expected_values:
-    TOYOTA_AAT_7C4: 41.8
+    PRIUSV_AAT_7C4: 41.8
   response: 7CC036122BA
 - expected_values:
-    TOYOTA_AAT_7C4: 42.15
+    PRIUSV_AAT_7C4: 42.15
   response: 7CC036122BB
 - expected_values:
-    TOYOTA_AAT_7C4: 42.5
+    PRIUSV_AAT_7C4: 42.5
   response: 7CC036122BC
 - expected_values:
-    TOYOTA_AAT_7C4: 42.85
+    PRIUSV_AAT_7C4: 42.85
   response: 7CC036122BD

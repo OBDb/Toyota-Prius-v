@@ -1,8 +1,8 @@
 command_id: 7C4.7CC.2122
 test_cases:
 - expected_values:
-    TOYOTA_AAT_7C4: 20.8
+    PRIUSV_AAT_7C4: 20.8
   response: 7CC0361227E
 - expected_values:
-    TOYOTA_AAT_7C4: 30.25
+    PRIUSV_AAT_7C4: 30.25
   response: 7CC03612299
