@@ -1,0 +1,22 @@
+command_id: 7E2.7EA.217D
+test_cases:
+- expected_values:
+    PRIUSV_AC_CONS_POWER_W: 0
+    PRIUSV_BOOST_RAT: 0
+    PRIUSV_CONV_CARRIER_9_0_9_1_8_2_8_3_7_4_7_5_4_6: 0
+  response: 7EA05617D000000
+- expected_values:
+    PRIUSV_AC_CONS_POWER_W: 550
+    PRIUSV_BOOST_RAT: 0
+    PRIUSV_CONV_CARRIER_9_0_9_1_8_2_8_3_7_4_7_5_4_6: 0
+  response: 7EA05617D00000B
+- expected_values:
+    PRIUSV_AC_CONS_POWER_W: 200
+    PRIUSV_BOOST_RAT: 27
+    PRIUSV_CONV_CARRIER_9_0_9_1_8_2_8_3_7_4_7_5_4_6: 5
+  response: 7EA05617D360504
+- expected_values:
+    PRIUSV_AC_CONS_POWER_W: 300
+    PRIUSV_BOOST_RAT: 73
+    PRIUSV_CONV_CARRIER_9_0_9_1_8_2_8_3_7_4_7_5_4_6: 5
+  response: 7EA05617D920506

@@ -1,0 +1,10 @@
+command_id: 7E2.7EA.218E
+test_cases:
+- expected_values:
+    PRIUSV_COOLING_FAN_0: 0
+    PRIUSV_COOLING_FAN_RELAY: 1
+  response: 7EA04618E0080
+- expected_values:
+    PRIUSV_COOLING_FAN_0: 68
+    PRIUSV_COOLING_FAN_RELAY: 1
+  response: 7EA04618E8880

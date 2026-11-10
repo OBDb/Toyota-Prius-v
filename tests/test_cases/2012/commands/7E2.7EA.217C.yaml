@@ -1,0 +1,30 @@
+command_id: 7E2.7EA.217C
+test_cases:
+- expected_values:
+    PRIUSV_MG1_CARRIER: 2500
+    PRIUSV_MG2_CARRIER: 5000
+  response: 7EA04617C3264
+- expected_values:
+    PRIUSV_MG1_CARRIER: 3750
+    PRIUSV_MG2_CARRIER: 2500
+  response: 7EA04617C4B32
+- expected_values:
+    PRIUSV_MG1_CARRIER: 3750
+    PRIUSV_MG2_CARRIER: 5000
+  response: 7EA04617C4B64
+- expected_values:
+    PRIUSV_MG1_CARRIER: 5000
+    PRIUSV_MG2_CARRIER: 2500
+  response: 7EA04617C6432
+- expected_values:
+    PRIUSV_MG1_CARRIER: 5000
+    PRIUSV_MG2_CARRIER: 3750
+  response: 7EA04617C644B
+- expected_values:
+    PRIUSV_MG1_CARRIER: 5000
+    PRIUSV_MG2_CARRIER: 5000
+  response: 7EA04617C6464
+- expected_values:
+    PRIUSV_MG1_CARRIER: 10000
+    PRIUSV_MG2_CARRIER: 2500
+  response: 7EA04617CC832
