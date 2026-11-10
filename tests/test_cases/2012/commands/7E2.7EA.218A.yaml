@@ -1,0 +1,14 @@
+command_id: 7E2.7EA.218A
+test_cases:
+- expected_values:
+    PRIUSV_POWER_RESOURCE_IB: 249152.32
+  response: 7EA04618A6174
+- expected_values:
+    PRIUSV_POWER_RESOURCE_IB: 317092.32
+  response: 7EA04618A7BFE
+- expected_values:
+    PRIUSV_POWER_RESOURCE_IB: 347882.32
+  response: 7EA04618A8805
+- expected_values:
+    PRIUSV_POWER_RESOURCE_IB: 429992.32
+  response: 7EA04618AA818

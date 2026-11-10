@@ -1,0 +1,52 @@
+command_id: 7E0.7E8.21E1
+test_cases:
+- expected_values:
+    PRIUSV_CODES_INCLUDE: 0
+  response: |-
+    7E8100A61E100005F59
+    7E82100000632000000
+- expected_values:
+    PRIUSV_CODES_INCLUDE: 0
+  response: |-
+    7E8100A61E100005F59
+    7E8210000093F000000
+- expected_values:
+    PRIUSV_CODES_INCLUDE: 0
+  response: |-
+    7E8100A61E100005F59
+    7E82100000ED7000000
+- expected_values:
+    PRIUSV_CODES_INCLUDE: 0
+  response: |-
+    7E8100A61E100005F59
+    7E82100009BB8000000
+- expected_values:
+    PRIUSV_CODES_INCLUDE: 0
+  response: |-
+    7E8100A61E100005F59
+    7E8210000B1AD000000
+- expected_values:
+    PRIUSV_CODES_INCLUDE: 0
+  response: |-
+    7E8100A61E100005F59
+    7E8210000B4C8000000
+- expected_values:
+    PRIUSV_CODES_INCLUDE: 0
+  response: |-
+    7E8100A61E100005F59
+    7E8210000BC1F000000
+- expected_values:
+    PRIUSV_CODES_INCLUDE: 0
+  response: |-
+    7E8100A61E100005F59
+    7E8210000BECA000000
+- expected_values:
+    PRIUSV_CODES_INCLUDE: 0
+  response: |-
+    7E8100A61E100005F59
+    7E8210000C211000000
+- expected_values:
+    PRIUSV_CODES_INCLUDE: 0
+  response: |-
+    7E8100A61E100005F59
+    7E8210000C996000000
