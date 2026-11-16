@@ -285,7 +285,7 @@
   ]},
 { "hdr": "700", "rax": "708", "dbg": true, "cmd": {"22": "1621"}, "freq": 1,
   "signals": [
-    {"id": "PRIUSV_GEAR_700", "path": "Transmission", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Gear"}
+    {"id": "PRIUSV_GEAR_700", "path": "Transmission", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Gear", "suggestedMetric": "gear"}
   ]},
 { "hdr": "700", "rax": "708", "dbg": true, "cmd": {"22": "1622"}, "freq": 1,
   "signals": [
@@ -700,8 +700,8 @@
   ]},
 { "hdr": "7B0", "rax": "7B8", "cmd": {"21": "47"}, "freq": 0.25, "filter": { "to": 2022 }, "dbgfilter": { "to": 2011, "years": [2013], "from": 2016 },
   "signals": [
-    {"id": "PRIUSV_LAT_G",       "path": "Orientation", "fmt": {           "len": 8,  "max": 2.5,  "min": -2.5,  "div": 50,                 "sign": true, "unit": "gravity" }, "name": "Lateral g"},
-    {"id": "PRIUSV_LNG_G",       "path": "Orientation", "fmt": {"bix": 8,  "len": 8,  "max": 2.5,  "min": -2.5,  "div": 50,                 "sign": true, "unit": "gravity" }, "name": "Longitudinal g"},
+    {"id": "PRIUSV_LAT_G",       "path": "Orientation", "fmt": {           "len": 8,  "max": 2.5,  "min": -2.5,  "div": 50,                 "sign": true, "unit": "gravity" }, "name": "Lateral g",                   "suggestedMetric": "lateralAcceleration"},
+    {"id": "PRIUSV_LNG_G",       "path": "Orientation", "fmt": {"bix": 8,  "len": 8,  "max": 2.5,  "min": -2.5,  "div": 50,                 "sign": true, "unit": "gravity" }, "name": "Longitudinal g",              "suggestedMetric": "longitudinalAcceleration"},
     {"id": "PRIUSV_YAW_RATE",    "path": "Orientation", "fmt": {"bix": 16, "len": 8,  "max": 127,  "min": -128,             "add": -128,                  "unit": "degrees" }, "name": "Yaw rate value, degrees/sec"},
     {"id": "PRIUSV_STEER_ANGLE", "path": "Control",     "fmt": {"bix": 24, "len": 16, "max": 3276, "min": -3276, "div": 10, "add": -3276.8,               "unit": "degrees" }, "name": "Steering wheel angle",        "description": "Positive = counter-clockwise, negative = clockwise."}
   ]},
@@ -1090,8 +1090,8 @@
     {"id": "PRIUSV_CALCULATED_LOAD_7E0",      "path": "Engine",   "fmt": {            "len": 8,  "max": 100,                  "mul": 100, "div": 255,               "unit": "percent"           }, "name": "Calculated load"},
     {"id": "PRIUSV_VEHICLE_LOAD",             "path": "Engine",   "fmt": {"bix": 8,   "len": 16, "max": 100,                  "mul": 100, "div": 65535,             "unit": "percent"           }, "name": "Vehicle load"},
     {"id": "PRIUSV_MAF",                      "path": "Engine",   "fmt": {"bix": 24,  "len": 16, "max": 655.35,                           "div": 100,               "unit": "gramsPerSecond"    }, "name": "Mass air flow",                     "suggestedMetric": "massAirFlow"},
-    {"id": "PRIUSV_MAP",                      "path": "Engine",   "fmt": {"bix": 40,  "len": 8,  "max": 255,                                                        "unit": "kilopascal"        }, "name": "Manifold absolute pressure"},
-    {"id": "PRIUSV_INTAKE_AIR",               "path": "Engine",   "fmt": {"bix": 48,  "len": 8,  "max": 215,      "min": -40,                           "add": -40, "unit": "celsius"           }, "name": "Intake air"},
+    {"id": "PRIUSV_MAP",                      "path": "Engine",   "fmt": {"bix": 40,  "len": 8,  "max": 255,                                                        "unit": "kilopascal"        }, "name": "Manifold absolute pressure",        "suggestedMetric": "absoluteBoostPressure"},
+    {"id": "PRIUSV_INTAKE_AIR",               "path": "Engine",   "fmt": {"bix": 48,  "len": 8,  "max": 215,      "min": -40,                           "add": -40, "unit": "celsius"           }, "name": "Intake air",                        "suggestedMetric": "intakeAirTemperature"},
     {"id": "PRIUSV_ATMOSPHERE_PRESSURE",      "path": "Engine",   "fmt": {"bix": 56,  "len": 8,  "max": 255,                                                        "unit": "kilopascal"        }, "name": "Atmosphere pressure"},
     {"id": "PRIUSV_COOLANT_TEMP",             "path": "Engine",   "fmt": {"bix": 64,  "len": 8,  "max": 215,      "min": -40,                           "add": -40, "unit": "celsius"           }, "name": "Coolant temp"},
     {"id": "PRIUSV_ENGINE_SPEED",             "path": "Movement", "fmt": {"bix": 72,  "len": 16, "max": 16383.75,                         "div": 4,                 "unit": "rpm"               }, "name": "Engine speed"},
@@ -1127,7 +1127,7 @@
   ]},
 { "hdr": "7E0", "rax": "7E8", "cmd": {"21": "06"}, "freq": 1, "dbgfilter": { "to": 2011, "years": [2013, 2014], "from": 2016 },
   "signals": [
-    {"id": "PRIUSV_MIL",                            "path": "DTCs", "fmt": {           "len": 1,  "max": 1,     "unit": "offon"      }, "name": "MIL"},
+    {"id": "PRIUSV_MIL",                            "path": "DTCs", "fmt": {           "len": 1,  "max": 1,     "unit": "offon"      }, "name": "MIL",                                 "suggestedMetric": "checkEngineLightOn"},
     {"id": "PRIUSV_NUMBER_OF_EMISSION_DTC",         "path": "DTCs", "fmt": {"bix": 1,  "len": 7,  "max": 127,   "unit": "scalar"     }, "name": "Number of emission DTC"},
     {"id": "PRIUSV_COMPLETE_PARTS_MONITOR_AVAIL",   "path": "DTCs", "fmt": {"bix": 13, "len": 1,  "max": 1,     "unit": "noyes"      }, "name": "Complete parts monitor available?"},
     {"id": "PRIUSV_FUEL_SYSTEM_MONITOR_AVAIL",      "path": "DTCs", "fmt": {"bix": 14, "len": 1,  "max": 1,     "unit": "noyes"      }, "name": "Fuel system monitor available?"},
@@ -1165,7 +1165,7 @@
   ]},
 { "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"21": "0F"}, "freq": 1,
   "signals": [
-    {"id": "PRIUSV_IAT_21", "path": "Engine", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Intake air temperature"}
+    {"id": "PRIUSV_IAT_21", "path": "Engine", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Intake air temperature", "suggestedMetric": "intakeAirTemperature"}
   ]},
 { "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"21": "10"}, "freq": 1,
   "signals": [
@@ -1383,7 +1383,7 @@
   ]},
 { "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"21": "85"}, "freq": 0.4,
   "signals": [
-    {"id": "PRIUSV_GEAR",       "path": "Transmission", "fmt": {          "len": 8, "max": 20, "unit": "scalar" }, "name": "Gear"},
+    {"id": "PRIUSV_GEAR",       "path": "Transmission", "fmt": {          "len": 8, "max": 20, "unit": "scalar" }, "name": "Gear",                     "suggestedMetric": "gear"},
     {"id": "PRIUSV_TQC_LOCKUP", "path": "Transmission", "fmt": {"bix": 8, "len": 1, "max": 1,  "unit": "offon"  }, "name": "Torque converter lock-up", "description": "Engages a clutch inside the torque converter to create a direct connection between the engine and transmission, reducing slippage and improving efficiency."}
   ]},
 { "hdr": "7E0", "rax": "7E8", "cmd": {"21": "B2"}, "freq": 1, "dbgfilter": { "to": 2011, "from": 2013 },
@@ -1411,7 +1411,7 @@
   ]},
 { "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"21": "D3"}, "freq": 0.25,
   "signals": [
-    {"id": "PRIUSV_CRUISE_CTRL_SPD", "path": "Movement", "fmt": {"bix": 8,  "len": 8, "max": 255, "unit": "kilometersPerHour" }, "name": "Cruise control speed"},
+    {"id": "PRIUSV_CRUISE_CTRL_SPD", "path": "Movement", "fmt": {"bix": 8,  "len": 8, "max": 255, "unit": "kilometersPerHour" }, "name": "Cruise control speed", "suggestedMetric": "cruiseSetSpeed"},
     {"id": "PRIUSV_CRUISE_CTRL_ON",  "path": "Engine",   "fmt": {"bix": 25, "len": 1, "max": 1,   "unit": "offon"             }, "name": "Cruise control on"}
   ]},
 { "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"21": "D9"}, "freq": 5,
